@@ -2,12 +2,6 @@ version: '3.8'
 services:
   bun:
     image: oven/bun
-    # ports:
-      # - 4455:8080
-    # volumes:
-    #   -  ".:/home/bun/app"
-    # command: /bin/sh -c "bun run --watch ./src/index.ts"
-    # command: /bin/sh -c "ls -la && cd app && ls -la"
     volumes:
       - ".:/home/bun/app" # Example of mounting the 'src' directory
     command: /bin/sh -c "bun run --watch ./index.ts"
