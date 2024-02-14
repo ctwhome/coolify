@@ -1,2 +1,4 @@
 
-console.log("hello there")
+setInterval(() => {
+  console.log("hello there")
+}, 1000)
