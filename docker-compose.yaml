@@ -2,9 +2,9 @@ version: '3.8'
 services:
   bun:
     image: oven/bun
-    ports:
-      - 4455:8080
-    volumes:
-      -  "./app:/home/bun/app"
+    # ports:
+      # - 4455:8080
+    # volumes:
+      # -  "./app:/home/bun/app"
     # command: /bin/sh -c "bun run --watch ./src/index.ts"
-    # command: /bin/sh -c "ls -la && pwd && cat README.md && cat docker-compose.yml"
+    command: /bin/sh -c "ls -la && pwd"
