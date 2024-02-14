@@ -1,2 +1,2 @@
-[deno]
-version = "1.14.2"
+[application]
+type = "deno"
