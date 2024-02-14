@@ -3,7 +3,7 @@ services:
   bun:
     image: oven/bun
     ports:
-      - 5555:8080
+      - 4455:8080
     volumes:
       -  "/:/home/bun/app"
     # command: /bin/sh -c "bun install && bun run --watch ./src/index.ts"
