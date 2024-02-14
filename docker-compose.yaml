@@ -6,4 +6,5 @@ services:
       - 4455:8080
     volumes:
       -  "./:/home/bun/app"
-    command: /bin/sh -c "bun run --watch ./src/index.ts"
+    # command: /bin/sh -c "bun run --watch ./src/index.ts"
+    command: /bin/sh -c "ls -la && pwd"
