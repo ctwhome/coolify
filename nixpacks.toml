@@ -1,2 +1,5 @@
 [application]
 type = "deno"
+
+[providers]
+[providers.deno]
