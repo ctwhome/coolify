@@ -1,2 +1,0 @@
-# coolify
-Testing Coolify options
