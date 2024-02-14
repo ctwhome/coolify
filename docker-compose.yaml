@@ -9,5 +9,5 @@ services:
     # command: /bin/sh -c "bun run --watch ./src/index.ts"
     # command: /bin/sh -c "ls -la && cd app && ls -la"
     volumes:
-      - "./src:/home/bun/app/src" # Example of mounting the 'src' directory
-    command: /bin/sh -c "bun run --watch ./src/index.ts"
+      - ".:/home/bun/app" # Example of mounting the 'src' directory
+    command: /bin/sh -c "bun run --watch ./index.ts"
