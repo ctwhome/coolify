@@ -4,7 +4,10 @@ services:
     image: oven/bun
     # ports:
       # - 4455:8080
-    volumes:
-      -  ".:/home/bun/app"
+    # volumes:
+    #   -  ".:/home/bun/app"
     # command: /bin/sh -c "bun run --watch ./src/index.ts"
-    command: /bin/sh -c "ls -la && cd app && ls -la"
+    # command: /bin/sh -c "ls -la && cd app && ls -la"
+    volumes:
+      - "./src:/home/bun/app/src" # Example of mounting the 'src' directory
+    command: /bin/sh -c "bun run --watch ./src/index.ts"
